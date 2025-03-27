@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <title>computer system</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .y {
+            background-color: #166f8a;
+            margin: 0;
+            padding: 10 10 10 10;
+            margin-left: 10;
+        }
+        a{
+            margin-left: 130;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            text-decoration: none;
+            color: #000;
+        }
+        h1{
+            font-size: 30px;
+            color: aliceblue;
+        }
+        p{
+            font-size: 18px;
+            color: aliceblue;
+        }
+        h2{
+            font-size: large;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="y">
+    <a href="number system.html">number system</a>
+    <a href="computer software.html">computer software</a>
+    <a href="application package.html">application package</a>
+    <a href="index.html">computer system</a>
+    <a href="web tech.html">web technology</a>
+    <a href="multimedia.html">multimedia</a>
+    <a href="information security.html">information security</a>
+    </nav>
+    <h1>Programming concepts</h1>
+    <p>To communicate with the computer is to develop a third language- a language that can be understood by both you and the computer. This is what a programming language is, A set of rules that provides a way of instructing the computer to perform certain operations. A computer needs instructions to follow because it cannot think on its own. For instance, when playing a game of solitare you must chose which card to move. These instructions compose only a small part of the solitare program. This program comprises many more instructions that allow a user to perform actions, such as begnining or ending a game, seleecting card's color, and so forth.
+         Therefore, a computer program comprises instructions that direct the actions of the computer.</p>
+<p>types of programming language: <br>
+    1. machine level language <br>
+    2. assembly language <br>
+    3. high level language</p>
+    <p>How does machine level language work?</p>
+    <p>Machine-level language operates at the hardware level. Here's a simplified overview of how it works: <br>
+
+Fetch: The CPU fetches an instruction from memory. <br>
+Decode: The CPU decodes the instruction to determine the operation to perform. <br>
+Execute: The CPU executes the instruction, such as adding two numbers or moving data. <br>
+Store: The result of the operation is stored in memory or a register.</p>
+<h2>assembly language</h2>
+<p>Assembly-level language is a low-level programming language that is closely related to machine language. It uses mnemonics (short, human-readable codes) to represent machine-level instructions. Each mnemonic corresponds to a specific machine instruction, making it easier for programmers to write and understand low-level code.</p>
+<p>Characteristics of Assembly Language: <br>
+Hardware-Specific: Each CPU architecture has its own assembly language. <br>
+Human-Readable: Uses mnemonics like MOV, ADD, and JMP instead of binary. <br>
+Direct Control: Provides precise control over hardware resources. <br>
+Efficiency: Programs written in assembly language are highly optimized for performance.</p>
+<h2>high level language</h2>
+<p>High-level languages are programming languages that are closer to human language and further from machine 
+    language. They provide a high level of abstraction from hardware, making them easier to learn and use. 
+    Examples include Python, Java, C++, and JavaScript.</p>
+
+    <p>Characteristics of high level language</p>
+    <p>Characteristics of High-Level Languages: <br>
+Readability: Syntax is similar to human language. <br>
+Portability: Programs can run on different platforms with minimal changes. <br>
+Abstraction: Hides low-level details like memory management. <br>
+Productivity: Faster development compared to low-level languages.</p>
+
+<h1>Programming in C</h1>
+<p>Programming in C is a fundamental skill for any aspiring programmer. C is a high-level language that is 
+    a base for many languages in computer.
+    C is a general-purpose language that can be used for a wide range of applications.
+</p>
+<p>C programming contains different types of variables, operators, control structures, functions, arrays, and pointers.
+    It allows user to create problem solving programs easily. C programming has many keywords that has a different meaning 
+    and can't be used in as a variable or a constant.
+</p>
+<p>Programmes in C</p>
+<p>
+    code for fibonnaci sequence <br>
+ <br>   #include <stdio.h>
+
+<br>int main() {
+    <br>int i, n, first = 0, second = 1, next;
+
+<br>    printf("Enter the number of terms: ");
+    <br>scanf("%d", &n);
+
+<br>    printf("Fibonacci Series: ");
+    
+   <br> for (i = 0; i < n; i++) {
+       <br> if (i <= 1) {
+            <br> = i;
+       }<br> else {
+         <br>next = first + second;
+            first = second;
+            second = next;
+       }<br>
+        printf("%d ", next);
+    }
+<br>
+    <br>printf("\n");
+    <br>printf("executed by raghav");
+    <br>return 0;
+}
+</p>
+<img src="fibonacci.png">
+<h2>code for palindrome</h2>
+<p>
+    #include <stdio.h>
+<br>
+int main() {
+    <br>int num, reversedNum = 0, remainder, originalNum;
+    
+   <br> printf("Enter a number: ");
+ <br>   scanf("%d", &num);
+    <br>
+    <br>originalNum = num;
+    <br>
+    while (num != 0) {
+        <br>remainder = num % 10;
+        <br>reversedNum = reversedNum * 10 + remainder;
+        <br>num /= 10;
+    }
+
+<br>    if (originalNum == reversedNum) {
+    <br>    printf("%d is a palindrome.\n", originalNum);
+    } <br>else {
+        <br>printf("%d is not a palindrome.\n", originalNum);
+    }
+    <br>return 0;
+}
+</p>
+<img src="palind.png">
+<h2>perfect numbers</h2>
+<p>
+#include <stdio.h>
+<br>
+int main() {
+<br>    int i, num, sum = 0;
+
+<br>    printf("Enter a number: ");
+    <br>scanf("%d", &num);
+
+<br>    for (i = 1; i <= num / 2; i++) {
+      <br> (num % i == 0) {
+          <br>    sum += i;
+        }
+    }
+
+<br>    if (sum == num) {
+    <br>    printf("%d is a perfect number.\n", num);
+    } else {
+       <br> printf("%d is not a perfect number.\n", num);
+    }
+    <br>return 0;
+}
+</p>
+<img src="perfect number.png">
+<h2>factorial of a number</h2>
+<p>
+    #include <stdio.h>
+
+<br>int main() {
+    <br>int num, i;
+   <br> int factorial = 1;
+    
+    <br>printf("Enter a number: ");
+    <br>scanf("%d", &num);
+
+<br>    if (num < 0) {
+    <br>    printf("Factorial is not defined for negative numbers.\n");
+    } else {
+     <br>   for (i = 1; i <= num; i++) {
+         <br>   factorial *= i;
+        }
+        <br>printf("Factorial of %d = %d\n", num, factorial);
+        <br>printf("executed by raghav")
+    }
+    <br>return 0;
+}
+</p>
+<img src="factorial.png">
+</body>
+</html>
