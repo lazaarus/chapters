@@ -1,89 +1,206 @@
-<html lang="en">
+<html>
 <head>
-    <title>computer system</title>
+    <title>Database Concepts and SQL Reference</title>
     <style>
-        body{
-            background-color: grey;
-        }
-        .y {
-            background-color: #166f8a;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 10 10 10 10;
-            margin-left: 10;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        a{
-            margin-left: 130;
-            font-size: large;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 200;
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
-            color: #000;
         }
-        h1{
-            font-size: 30px;
-            color: aliceblue;
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        p{
-            color: aliceblue;
-            font-size: 18px;
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-        h2{
-            color: aliceblue;
-            font-size: large;
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <nav class="y">
-    <a href="number system.html">number system</a>
-    <a href="computer software.html">computer software</a>
-    <a href="application package.html">application package</a>
-    <a href="programming concepts.html">programming concepts</a>
-    <a href="web tech.html">web technology</a>
-    <a href="multimedia.html">multimedia</a>
-    <a href="information security.html">information security</a>
-    </nav>
-    <h1>introduction</h1>
-    <p>Computer is an electronic device derived from the Latin word "computere," which means to calculate. It processes input, stores it, and produces meaningful output through an output device, following the Input-Process-Output (IPO) cycle. Computers rely on the principle of GIGO (Garbage In, Garbage Out), emphasizing that the output is only as good as the input.
-<br> Characteristics of a computer include:</p>
-<h2>speed</h2>
-<p>Computers execute instructions at remarkable speeds, capable of processing millions or even billions of calculations in a single second. 
-    This high speed allows them to handle complex tasks such as simulations, calculations, and data analysis in a fraction of the time it would take a human. 
-    This makes computers an essential tool in fields like scientific research, finance, and gaming, where time-sensitive decisions are crucial.
-    </p>
-<h2>accuracy</h2>
-<p>Computers are designed to perform operations with unparalleled precision.
-     They can process and compute large volumes of data without human error, provided the software is properly coded. 
-     The accuracy of computers ensures that tasks like mathematical calculations, data processing, and simulations are completed correctly, 
-     reducing the chances of mistakes that are common in manual processes. As a result, industries like banking,
-      healthcare, and engineering rely heavily on computer systems for error-free operations.
-</p>
-<h2>Storage</h2>
-<p>Computers have the ability to store vast amounts of data, both in the short-term.
-     Primary storage, such as RAM, provides quick access to data that is needed during active tasks, 
-     while secondary storage like hard drives, SSDs, and cloud storage provide larger capacities for saving long-term data.
- </p>
- <h2>diligent</h2>
- <p>Computers can work continuously without getting tired or feeling fatigued. They can perform tasks repeatedly untill it is provided with instruction.
-</p>
-<h2>Types of computer on the basis of size</h2>
-<p>
-    Microcomputers: <br>
-Microcomputers, or personal computers, are designed for individual use. They are compact, affordable, and versatile. Examples include desktops, laptops, smartphones,
- and tablets, which are used for tasks like word processing, web browsing, gaming, and multimedia consumption.
- <br>
- Minicomputers: <br>
-Minicomputers, also known as mid-range computers, are more powerful than microcomputers and can support multiple users simultaneously. They 
-are used in small to medium-sized businesses for applications like database management and industrial control systems. <br>
-Mainframes: <br>
-Mainframes are large, high-performance computers used by large organizations to process and manage massive amounts of data. They are essential
- for tasks like banking systems, airline reservations, and government databases, supporting thousands of users at once.
- <br>
- Supercomputers: <br>
-Supercomputers are the most powerful computers, designed to solve complex problems that require immense computational power. They are used in fields like scientific research,
- weather forecasting, and artificial intelligence. Examples include Fugaku in Japan and Summit in the United States.
-</p>
 
+<header>
+    <h1>Database Concepts and SQL Reference</h1>
+</header>
+
+<nav>
+    <a href="#data-information">Data & Information</a>
+    <a href="#dbms">DBMS</a>
+    <a href="#models">Database Models</a>
+    <a href="#integrity">Integrity Constraints</a>
+    <a href="#normalization">Normalization</a>
+    <a href="#security">Database Security</a>
+    <a href="#sql">SQL Data Types</a>
+</nav>
+
+<section id="data-information">
+    <h2>Data & Information</h2>
+    <p><strong>Data</strong> refers to raw facts and figures without context. <strong>Information</strong> is processed data that is meaningful and useful. Features of information include accuracy, relevance, timeliness, and completeness.</p>
+</section>
+
+<section id="dbms">
+    <h2>Database Management System (DBMS)</h2>
+    <p>A DBMS is software that manages databases, ensuring data is stored, retrieved, and manipulated efficiently. It provides a systematic way of managing data and allows multiple users to access the database concurrently.</p>
+    <h3>Objectives</h3>
+    <ul>
+        <li>Data Integrity</li>
+        <li>Data Security</li>
+        <li>Data Consistency</li>
+        <li>Data Redundancy Control</li>
+    </ul>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Efficient Data Management</li>
+        <li>Data Security</li>
+        <li>Backup and Recovery</li>
+        <li>Concurrent Access</li>
+    </ul>
+    <h3>Disadvantages</h3>
+    <ul>
+        <li>Complexity</li>
+        <li>Cost</li>
+        <li>Performance Overhead</li>
+    </ul>
+</section>
+
+<section id="models">
+    <h2>Types of Database Models</h2>
+    <h3>Hierarchical Model</h3>
+    <p>Data is organized in a tree-like structure. Each child record has only one parent. Example: IBM's Information Management System (IMS).</p>
+    <h3>Network Model</h3>
+    <p>Data is organized using a graph structure, allowing multiple parent-child relationships. Example: Integrated Data Store (IDS).</p>
+    <h3>Relational Model</h3>
+    <p>Data is organized into tables (relations) with rows and columns. Example: MySQL, PostgreSQL.</p>
+    <h3>Entity-Relationship Model</h3>
+    <p>Data is represented using entities and relationships. Used for database design.</p>
+</section>
+
+<section id="integrity">
+    <h2>Integrity Constraints</h2>
+    <h3>Domain Integrity</h3>
+    <p>Ensures that all values in a column are of the same type and within a valid range.</p>
+    <h3>Entity Integrity</h3>
+    <p>Ensures that each table has a primary key and that the key is unique and not null.</p>
+    <h3>Referential Integrity</h3>
+    <p>Ensures that foreign keys correctly point to primary keys in other tables.</p>
+</section>
+
+<section id="normalization">
+    <h2>Normalization</h2>
+    <p>Normalization is the process of organizing data to reduce redundancy and improve data integrity.</p>
+    <h3>Normal Forms</h3>
+    <ul>
+        <li><strong>1NF</strong>: Eliminate duplicate columns; create separate tables for related data.</li>
+        <li><strong>2NF</strong>: Remove partial dependencies; all non-key attributes must depend on the whole primary key.</li>
+        <li><strong>3NF</strong>: Remove transitive dependencies; non-key attributes must not depend on other non-key attributes.</li>
+    </ul>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Eliminates Redundancy</li>
+        <li>Improves Data Integrity</li>
+        <li>Efficient Data Updates</li>
+    </ul>
+    <h3>Disadvantages</h3>
+    <ul>
+        <li>Complex Queries</li>
+        <li>Performance Overhead</li>
+    </ul>
+</section>
+
+<section id="security">
+    <h2>Database Security</h2>
+    <p>Database security involves measures to protect data from unauthorized access and corruption.</p>
+    <h3>Challenges</h3>
+    <ul>
+        <li>Unauthorized Access</li>
+        <li>Data Breaches</li>
+        <li>Data Corruption</li>
+    </ul>
+    <h3>Security Measures</h3>
+    <ul>
+        <li>Access Control</li>
+        <li>Encryption</li>
+        <li>Auditing</li>
+        <li>Backup and Recovery</li>
+    </ul>
+</section>
+
+<section id="sql">
+    <h2>SQL Data Types</h2>
+    <p>SQL provides various data types to define the nature of data in a table.</p>
+    <h3>Character Types</h3>
+    <ul>
+        <li><strong>CHAR</strong>: Fixed-length character string.</li>
+        <li><strong>VARCHAR</strong>: Variable-length character string.</li>
+    </ul>
+    <h3>Binary Types</h3>
+    <ul>
+        <li><strong>BINARY</strong>: Fixed-length binary data.</li>
+        <li><strong>VARBINARY</strong>: Variable-length binary data.</li>
+    </ul>
+    <h3>Text Types</h3>
+    <ul>
+        <li><strong>TINYTEXT</strong>: Very short text string.</li>
+        <li><strong>TEXT</strong>: Short text string.</li>
+        <li><strong>LONGTEXT</strong>: Long text string.</li>
+    </ul>
+    <h3>Numeric Types</h3>
+    <ul>
+        <li><strong>INT</strong>: Integer.</li>
+        <li><strong>FLOAT</strong>: Floating-point number.</li>
+        <li><strong>DOUBLE</strong>: Double precision floating-point number.</li>
+        <li><strong>DECIMAL</strong>: Fixed-point number.</li>
+    </ul>
+    <h3>Date and Time Types</h3>
+    <ul>
+        <li><strong>DATE</strong>: Date value.</li>
+        <li><strong>DATETIME</strong>: Date and time value.</li>
+    </ul>
+    <h3>Other Types</h3>
+    <ul>
+        <li><strong>ENUM</strong>: Enumeration; a list of predefined values.</li>
+        <li><strong>BIT</strong>: Bit-field.</li>
+        <li><strong>BOOLEAN</strong>: Boolean value (TRUE or FALSE).</li>
+        <li><strong>TINYINT</strong>: Very small integer.</li>
+    </ul>
+</section>
 
 </body>
 </html>
